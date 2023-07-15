@@ -1,0 +1,42 @@
+.header-bar {
+    margin-top: 10px;
+    background-color: #072a4b;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+
+.side-menu-ham{
+    color: azure;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover,
+a:active {
+    color: #fead89;
+}
+
+.header-name {
+    margin-right: 25px;
+    font-size: x-large;
+}
+
+.navigation-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+
+mat-toolbar {
+    border-radius: 3px;
+}
+
+@media(max-width: 959px) {
+    mat-toolbar {
+        border-radius: 0px;
+    }
+}
