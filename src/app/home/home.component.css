@@ -4,9 +4,6 @@
     padding-top: 100px;
     align-items: center;
     justify-content: center;
-    background-image: url("/assets/home-bg-big.jpeg");
-    background-size: 100% ;  
-    background-size: cover; 
 }
 
 .home-card-img {

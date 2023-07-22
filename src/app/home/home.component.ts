@@ -13,4 +13,9 @@ export class HomeComponent {
   navClickToScroll = (sectionName : string) =>{
     this.globalService.navClickToScroll(sectionName);
   }
+
+  getBackgroundImgURL(){
+    return `url(assets/home-bg-big.jpeg)`
+  }
+
 }
