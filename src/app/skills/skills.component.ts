@@ -14,34 +14,34 @@ export class SkillsComponent {
     {
       "title": "Machine Learning", "skillList": ['Classification', 'Regression Models',
         'Neural Networks', 'Support Vector Machines', 'Random Forest', 'Clustering',],
-      "imgUrl": "../../assets/ml-icon.PNG", "id":"skill-ml"
+      "imgUrl": "assets/ml-icon.PNG", "id":"skill-ml"
     },
 
     {
       "title": "Computer Vision", "skillList": ['Medical Image Analysis',
         'Computed Tomography', 'Image Segmentation', 'Keras', 'PyTorch'],
-      "imgUrl": "../../assets/computer-vision.jpg", "id":"skill-cv"
+      "imgUrl": "assets/computer-vision.jpg", "id":"skill-cv"
     },
 
     {
       "title": "Natural Language Processing", "skillList": ['NLTK', 'K-means Clustering',
         'HDBSCAN', 'Huggingface Transformers (BERT)', 'Close Domain Q&A', 'Haystack for Q&A'],
-      "imgUrl": "../../assets/NLP-icon.PNG", "id":"skill-nlp"
+      "imgUrl": "assets/NLP-icon.PNG", "id":"skill-nlp"
     },
 
     {
       "title": "Time Series Analysis", "skillList": ['Anomaly detection', 'XGBoost', 'DeepAR'],
-      "imgUrl": "../../assets/time-series-icon.jpg", "id":"skill-tsa"
+      "imgUrl": "assets/time-series-icon.jpg", "id":"skill-tsa"
     },
 
     {
       "title": "Programming", "skillList": ['Python', 'SQL', 'MongoDB', 'Matlab', 'R', 'Java', 'C'],
-      "imgUrl": "../../assets/programming-icon.PNG", "id":"skill-prog"
+      "imgUrl": "assets/programming-icon.PNG", "id":"skill-prog"
     },
 
     {
       "title": "Tools", "skillList": ['Jupyter Notebooks', 'Git', 'Docker', 'Kubeflow', 'AWS',],
-      "imgUrl": "../../assets/tools-icon.jpg", "id":"skill-tools"
+      "imgUrl": "assets/tools-icon.jpg", "id":"skill-tools"
     },
 
   ]
