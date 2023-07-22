@@ -1,9 +1,9 @@
-<div fxFlex="36%" fxFlex.xs="100%" fxFlex.sm="70%" fxFlex.md="65%" fxFlex.lg="35%" >
+<div id="aboutId" class="aboutSection">
+  <div fxLayout="row wrap" fxFlex="70%" fxFlex.xs="100%" fxFlex.sm="90%" fxFlex.md="80%">
     <mat-card class="mat-elevation-z4">
+      <h1 class="aboutTitle">Who is Aishwarya?</h1>
       <mat-card-content>
-        <div class="home-card-text-right">
-          <span class="home-hello">Hello!</span>
-          <span class="home-hello2">I am Aishwarya</span><span class="home-role">Machine Learning Engineer</span>
+        <div>
           <p class="home-intro">I am a keen-to-learn machine learning engineer with a masters in Electrical
             Engineering,
             specialising in Computer
@@ -31,8 +31,28 @@
         </div>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button> LindedIn </button>
-        <button mat-button> Git </button>
+        <div class="aboutButtons">
+          <div fxLayout="row wrap">
+            <p>
+              <a [href]="linkedInLink" target="_blank" rel="noreferrer noopener" #tooltip="matTooltip"
+                matTooltip="Click to go to my LinkedIn profile: {{linkedInLink}}"> <img class="linkedIn-img" src="assets/linkedIn.png"
+                  alt="LinkedIn Icon"> </a>
+
+              <a [href]="gitHubLink" target="_blank" rel="noreferrer noopener" #tooltip="matTooltip"
+                matTooltip="Click to go to my GitHub profile: {{gitHubLink}}"> <img class="github-img" src="assets/GitHub.png"
+                  alt="GitHub Icon"> </a>
+
+              <a [href]="emailLink" target="_top" rel="noreferrer noopener" #tooltip="matTooltip"
+                matTooltip="Click to send email to {{emailAddress}}"> <mat-icon class="emailIcon">
+                  email</mat-icon> </a>
+
+              <a [href]="phoneLink" target="_top" rel="noreferrer noopener" #tooltip="matTooltip"
+                matTooltip="Click to call {{phoneNumber}}"> <mat-icon class="phoneIcon">
+                  phone</mat-icon> </a>
+            </p>
+          </div>
+        </div>
       </mat-card-actions>
     </mat-card>
   </div>
+</div>

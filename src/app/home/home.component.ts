@@ -1,4 +1,5 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
+import { GlobalService } from '../global/global.service';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +8,9 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HomeComponent {
 
- 
+  constructor(private globalService : GlobalService){}
+
+  navClickToScroll = (sectionName : string) =>{
+    this.globalService.navClickToScroll(sectionName);
+  }
 }

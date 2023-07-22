@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { GlobalService } from 'src/app/global/global.service';
 
 @Component({
   selector: 'app-sidenav-list',
@@ -8,13 +9,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class SidenavListComponent implements OnInit {
   @Output() sidenavClose = new EventEmitter();
 
-  constructor() { }
+  constructor(private globalService : GlobalService) { }
 
   ngOnInit() {
   }
 
-  public onSidenavClose = () => {
+  public onSidenavClose = (sectionName : string) => {
     this.sidenavClose.emit();
+
+    this.globalService.navClickToScroll(sectionName);
   }
 
 }

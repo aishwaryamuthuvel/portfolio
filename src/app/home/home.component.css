@@ -4,7 +4,9 @@
     padding-top: 100px;
     align-items: center;
     justify-content: center;
-    background-color: #9799ba;
+    background-image: url("../../assets/home-bg-big.jpeg");
+    background-size: 100% ;  
+    background-size: cover; 
 }
 
 .home-card-img {
@@ -18,21 +20,9 @@
     background-color: #fdf6f5;
 }
 
-.home-title {
-    margin: 2% 5px 2% 5px;
-    padding: 2% 5px 2% 5px;
-    font-size: xx-large;
-    color: coral;
-}
-
 .home-img {
     height: 100%;
     width: 100%;
-}
-
-.home-img:hover{
-    animation: shake 0.5s;
-    border-radius: 50%;
 }
 
 .home-hello {
@@ -63,18 +53,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.home-intro {
-    font-size: medium;
-    margin: 15px;
-    line-height: 1.5;
-}
-
-.home-list {
-    font-size: medium;
-    margin: 15px;
-    line-height: 1.5;
-}
-
-.home-right {
-    margin-right: 55px;
+.homeClickHere{
+    cursor: pointer;
+    color:blue;
+    text-decoration: underline;
 }

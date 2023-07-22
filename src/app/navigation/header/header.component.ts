@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, HostListener  } from '@angular/core';
+import { GlobalService } from 'src/app/global/global.service';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,7 @@ export class HeaderComponent implements OnInit {
 
   headerWidth : any;
 
-  constructor() { }
+  constructor(private globalService : GlobalService){}
 
   ngOnInit() {
     this.getScreenWidth = window.innerWidth;
@@ -69,6 +70,10 @@ export class HeaderComponent implements OnInit {
         }
       }
     }
+  }
+
+  navClickToScroll = (sectionName : string) =>{
+    this.globalService.navClickToScroll(sectionName);
   }
 
 }

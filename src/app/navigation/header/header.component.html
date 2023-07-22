@@ -5,30 +5,35 @@
         </button>
     </div>
     <div>
-        <a class="header-name" routerLink="/home">Aishwarya</a>
+        <a class="header-name" (click)="navClickToScroll('homeId')" #tooltip="matTooltip"
+            matTooltip="Home: Scroll to Top">Aishwarya</a>
     </div>
     <div fxFlex fxLayout fxLayoutAlign="start" fxHide.md fxHide.sm fxHide.xs>
         <ul fxLayout fxLayoutGap="15px" class="navigation-items">
             <li>
-                <a routerLink="/about">About</a>
+                <a class="navLink" (click)="navClickToScroll('aboutId')" #tooltip="matTooltip"
+                    matTooltip="Scroll to About section">About</a>
             </li>
             <li>
-                <a routerLink="/skills">Skills</a>
+                <a class="navLink" (click)="navClickToScroll('skillsId')" #tooltip="matTooltip"
+                    matTooltip="Scroll to Skills section">Skills</a>
             </li>
             <li>
-                <a routerLink="/experience">Experience</a>
+                <a class="navLink" (click)="navClickToScroll('timelineId')" #tooltip="matTooltip"
+                    matTooltip="Scroll to Timeline section">Timeline</a>
             </li>
             <li>
-                <a routerLink="/projects">Projects</a>
+                <a class="navLink" (click)="navClickToScroll('projectsId')" #tooltip="matTooltip"
+                    matTooltip="Scroll to Projects section">Projects</a>
             </li>
             <li>
-                <a routerLink="/certifications">Certifications and Papers</a>
+                <a class="navLink" (click)="navClickToScroll('certificationsId')" #tooltip="matTooltip"
+                    matTooltip="Scroll to Certifications section">Certifications</a>
             </li>
             <li>
-                <a routerLink="/timeline">Timeline</a>
+                <a class="navLink" (click)="navClickToScroll('experienceId')" #tooltip="matTooltip"
+                    matTooltip="Scroll to Experience section">Experience</a>
             </li>
         </ul>
     </div>
-  </mat-toolbar>
-
- 
+</mat-toolbar>

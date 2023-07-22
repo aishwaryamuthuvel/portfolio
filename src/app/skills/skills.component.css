@@ -1,0 +1,95 @@
+.skillsSection {
+    margin-top: 5px auto;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsTitle {
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslateblue;
+}
+
+.skillsIntro {
+    margin: 5px auto;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+.skillSetDiv {
+    margin: 5px auto;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.skillSet-title {
+    font-size: large;
+}
+
+.skillSet {
+    list-style-type: none;
+}
+
+.skill-odd, .skill-even {
+    font-size: medium;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.skill-even:before, .skill-odd:before {
+    content: 'arrow_right';
+    font-family: 'Material Icons';
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.skill-odd:hover, .skill-even:hover{
+    background-color: #826ba8;
+    color: white;
+}
+
+.skill-ml{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.skill-cv{
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
+
+.skill-nlp{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.skill-tsa{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.skill-prog{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.skill-tools{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}

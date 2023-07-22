@@ -23,6 +23,11 @@ a:active {
 .header-name {
     margin-right: 25px;
     font-size: x-large;
+    cursor: pointer;
+}
+
+.navLink{
+    cursor: pointer;
 }
 
 .navigation-items {

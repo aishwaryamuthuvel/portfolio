@@ -1,0 +1,87 @@
+
+.aboutSection{
+    margin-top: 40px auto;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.aboutTitle{
+    margin:10px auto;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslateblue;
+}
+
+.home-intro {
+    font-size: medium;
+    margin: 15px;
+    line-height: 1.8;
+}
+
+.home-list {
+    font-size: medium;
+    margin: 15px;
+    line-height: 1.8;
+}
+
+.linkedIn-img{
+    padding-bottom: 15px;
+    height: 55px;
+    width: 55px;
+    margin-right: 8px;
+}
+
+.linkedIn-img:hover{
+    transform: scale(1.5);
+}
+
+.github-img{
+    height: 70px;
+    width: 70px;
+    padding-bottom: 8px;
+    padding-right: 30px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.github-img:hover{
+    transform: scale(1.5);
+}
+
+.emailIcon{
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    transform: scale(3);
+    color: black;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.emailIcon:hover{
+    transform: scale(4);
+}
+
+.phoneIcon{
+    padding-left: 5px;
+    padding-bottom: 15px;
+    transform: scale(3);
+    color: black;
+    margin-left: 8px;
+}
+
+.phoneIcon:hover{
+    transform: scale(4);
+}
+
+.aboutButtons{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}

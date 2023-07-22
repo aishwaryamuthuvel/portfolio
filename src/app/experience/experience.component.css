@@ -1,0 +1,48 @@
+.experienceSection {
+    margin-top: 40px auto;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.experienceTitle {
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslateblue;
+}
+
+.experience-card {
+    padding-top: 10px;
+}
+
+.experience-card-content {
+    padding: 25px 10px;
+    margin: 30px 10px auto;
+}
+
+.experience-intro-left {
+    font-size: large;
+    margin: 3px auto;
+    padding: 3px;
+}
+
+.experience-intro-right {
+    font-size: large;
+    margin: 3px auto;
+    padding: 3px;
+}
+
+.experience-points {
+    font-size: medium;
+    margin: 10px 50px auto;
+    padding: 3px;
+}
+
+.exp-alt-points {}
