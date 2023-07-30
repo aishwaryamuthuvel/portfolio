@@ -16,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     AboutComponent,
     SkillsComponent,
     CertificationsComponent,
-    TimelineComponent
+    TimelineComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,162 @@
-.certificationsSection{
+.certificationsSection {
     margin-top: 25px;
     margin-bottom: 25px;
-    padding-top: 25px;
+    padding-top: 75px;
     padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificationsTitle {
+    margin: 10px auto;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0c3b66;
+    color: white;
+    padding: 15px 0px;
+    border-radius: 20px;
+    line-height: 1.3;
+    width: 100%;
+}
+
+.certificationsDiv {
+    margin: 5px auto;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.certification {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid thistle;
+    margin-top: 20px;
+}
+
+.cert-title {
+    font-size: x-large;
+    padding: 2px;
+    font-family: sans-serif;
+    line-height: 1.3;
+}
+
+.cert-skill-title {
+    font-size: large;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cert-skill-list {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.cert-skill {
+    border: 0px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: #6a5acd;
+    padding: 10px;
+    margin: 5px;
+    font-size: medium;
+}
+
+.cert-desc {
+    font-size: large;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cert-link {
+    color: blue;
+    font-size: large;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+.publicationsSection {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.publicationsTitle {
+    margin: 10px auto;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0c3b66;
+    color: white;
+    padding: 15px 0px;
+    border-radius: 20px;
+    line-height: 1.3;
+    width: 100%;
+}
+
+.publicationsDiv {
+    margin: 5px auto;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.publication {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid thistle;
+    margin-top: 20px;
+}
+
+.publication-title {
+    font-size: x-large;
+    padding: 2px;
+    font-family: sans-serif;
+    line-height: 1.3;
+}
+
+.publication-skill-title {
+    font-size: large;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.publication-skill-list {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.publication-skill {
+    border: 0px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: #6a5acd;
+    padding: 10px;
+    margin: 5px;
+    font-size: medium;
+}
+
+.publication-desc {
+    font-size: large;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.publication-link {
+    color: blue;
+    font-size: large;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
 }

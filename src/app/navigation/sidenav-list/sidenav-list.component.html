@@ -20,8 +20,18 @@
         matTooltip="Scroll to Certifications section">
         <mat-icon class="side-menu-icons">image</mat-icon><span class="nav-caption">Certifications</span>
     </a>
+    <a mat-list-item (click)="onSidenavClose('publicationsId')" #tooltip="matTooltip"
+        matTooltip="Scroll to Publications section">
+        <mat-icon class="side-menu-icons">image</mat-icon><span class="nav-caption">Publication</span>
+    </a>
     <a mat-list-item (click)="onSidenavClose('experienceId')" #tooltip="matTooltip"
         matTooltip="Scroll to Experience section">
         <mat-icon class="side-menu-icons">work</mat-icon> <span class="nav-caption">Experience</span>
     </a>
+
+    <a mat-list-item (click)="onSidenavClose('')" href="assets/Aishwarya_Resume.pdf" target="_blank"
+        rel="noreferrer noopener" #tooltip="matTooltip" matTooltip="Click to open Resume"> <mat-icon
+            class="side-menu-icons"> insert_drive_file</mat-icon><span class="nav-caption">Resume </span>
+    </a>
+
 </mat-nav-list>
