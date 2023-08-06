@@ -2,6 +2,7 @@
     margin-top: 10px;
     background-color: #072a4b;
     z-index: 1000;
+    padding-bottom: 30px;
 }
 
 .foot-head {
@@ -47,4 +48,5 @@
     margin: 20px;
     font-size: small;
     border-radius: 10px;
+    cursor: pointer;
 }

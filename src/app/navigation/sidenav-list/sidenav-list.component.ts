@@ -9,15 +9,37 @@ import { GlobalService } from 'src/app/global/global.service';
 export class SidenavListComponent implements OnInit {
   @Output() sidenavClose = new EventEmitter();
 
-  constructor(private globalService : GlobalService) { }
+  constructor(private globalService: GlobalService) { }
 
   ngOnInit() {
+    window.addEventListener('scroll', this.scrollEvent, true);
   }
 
-  public onSidenavClose = (sectionName : string) => {
+  ngOnDestroy() {
+    window.removeEventListener('scroll', this.scrollEvent, true);
+  }
+
+  public onSidenavClose = (sectionName: string) => {
     this.sidenavClose.emit();
 
     this.globalService.navClickToScroll(sectionName);
+  }
+
+  sectionIds = ['homeId', 'aboutId', 'skillsId', 'timelineId',
+    'projectsId', 'certificationsId', 'publicationId', 'experienceId'];
+
+  currentSection = 'homeId';
+
+  scrollEvent = (event: any): void => {
+    for (let section of this.sectionIds) {
+      const element = document.getElementById(section);
+      const scrollTop = event.target.scrollTop;
+      if (element !== null) {
+        if ((element.offsetTop - 50) <= (scrollTop)) {
+          this.currentSection = element.id;
+        }
+      }
+    }
   }
 
 }

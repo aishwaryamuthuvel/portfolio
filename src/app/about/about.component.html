@@ -32,14 +32,14 @@
       </mat-card-content>
       <mat-card-actions>
         <div class="aboutButtons">
-          <p>
+          <p fxLayout="row wrap" fxLayoutGap="25px grid">
             <a [href]="linkedInLink" target="_blank" rel="noreferrer noopener" #tooltip="matTooltip"
               matTooltip="Click to go to my LinkedIn profile: {{linkedInLink}}"> <img class="linkedIn-img"
                 src="assets/linkedIn.png" alt="LinkedIn Icon"> </a>
 
             <a [href]="gitHubLink" target="_blank" rel="noreferrer noopener" #tooltip="matTooltip"
               matTooltip="Click to go to my GitHub profile: {{gitHubLink}}"> <img class="github-img"
-                src="assets/GitHub.png" alt="GitHub Icon"> </a>
+                src="assets/GitImg.png" alt="GitHub Icon"> </a>
 
             <a [href]="emailLink" target="_top" rel="noreferrer noopener" #tooltip="matTooltip"
               matTooltip="Click to send email to {{emailAddress}}"> <mat-icon class="emailIcon">

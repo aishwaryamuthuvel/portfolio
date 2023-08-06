@@ -5,37 +5,45 @@
         </button>
     </div>
     <div>
-        <a class="header-name" (click)="navClickToScroll('homeId')" #tooltip="matTooltip"
+        <a class="header-name" [ngClass]="{ 'current-section': currentSection === 'homeId' }"
+         (click)="navClickToScroll('homeId')" #tooltip="matTooltip"
             matTooltip="Home: Scroll to Top">Aishwarya</a>
     </div>
     <div fxFlex fxLayout fxLayoutAlign="start" fxHide.md fxHide.sm fxHide.xs>
         <ul fxLayout fxLayoutGap="15px" class="navigation-items">
             <li>
-                <a class="navLink" (click)="navClickToScroll('aboutId')" #tooltip="matTooltip"
+                <a class="navLink" [ngClass]="{ 'current-section': currentSection === 'aboutId' }"
+                 (click)="navClickToScroll('aboutId')" #tooltip="matTooltip"
                     matTooltip="Scroll to About section">About</a>
             </li>
             <li>
-                <a class="navLink" (click)="navClickToScroll('skillsId')" #tooltip="matTooltip"
+                <a class="navLink" [ngClass]="{ 'current-section': currentSection === 'skillsId' }"
+                 (click)="navClickToScroll('skillsId')" #tooltip="matTooltip"
                     matTooltip="Scroll to Skills section">Skills</a>
             </li>
             <li>
-                <a class="navLink" (click)="navClickToScroll('timelineId')" #tooltip="matTooltip"
+                <a class="navLink" [ngClass]="{ 'current-section': currentSection === 'timelineId' }"
+                 (click)="navClickToScroll('timelineId')" #tooltip="matTooltip"
                     matTooltip="Scroll to Timeline section">Timeline</a>
             </li>
             <li>
-                <a class="navLink" (click)="navClickToScroll('projectsId')" #tooltip="matTooltip"
+                <a class="navLink" [ngClass]="{ 'current-section': currentSection === 'projectsId' }"
+                (click)="navClickToScroll('projectsId')" #tooltip="matTooltip"
                     matTooltip="Scroll to Projects section">Projects</a>
             </li>
             <li>
-                <a class="navLink" (click)="navClickToScroll('certificationsId')" #tooltip="matTooltip"
+                <a class="navLink" [ngClass]="{ 'current-section': currentSection === 'certificationsId' }"
+                 (click)="navClickToScroll('certificationsId')" #tooltip="matTooltip"
                     matTooltip="Scroll to Certifications section">Certifications</a>
             </li>
             <li>
-                <a class="navLink" (click)="navClickToScroll('publicationsId')" #tooltip="matTooltip"
+                <a class="navLink" [ngClass]="{ 'current-section': currentSection === 'publicationId' }"
+                 (click)="navClickToScroll('publicationId')" #tooltip="matTooltip"
                     matTooltip="Scroll to Publications section">Publication</a>
             </li>
             <li>
-                <a class="navLink" (click)="navClickToScroll('experienceId')" #tooltip="matTooltip"
+                <a class="navLink" [ngClass]="{ 'current-section': currentSection === 'experienceId' }"
+                 (click)="navClickToScroll('experienceId')" #tooltip="matTooltip"
                     matTooltip="Scroll to Experience section">Experience</a>
             </li>
             <li>

@@ -32,56 +32,18 @@
     line-height: 1.8;
 }
 
-.linkedIn-img {
-    padding-bottom: 15px;
-    height: 45px;
-    width: 45px;
-    margin-right: 8px;
-}
-
-.linkedIn-img:hover {
-    transform: scale(1.2);
-}
-
-.github-img {
-    height: 60px;
-    width: 60px;
-    padding-bottom: 8px;
-    padding-right: 30px;
-    margin-right: 8px;
-    margin-left: 8px;
-}
-
-.github-img:hover {
-    transform: scale(1.2);
-}
-
-.emailIcon {
-    padding-left: 4px;
-    padding-bottom: 15px;
-    padding-right: 25px;
-    transform: scale(2.5);
-    color: black;
-    margin-right: 8px;
-    margin-left: 5px;
-}
-
-.emailIcon:hover {
-    transform: scale(3);
-}
-
-.phoneIcon {
-    padding-left: 6px;
-    padding-bottom: 15px;
-    transform: scale(2.5);
-    color: black;
-    margin-left: 8px;
-    padding-right: 12px;
-    margin-right: 6px;
-}
-
-.phoneIcon:hover {
-    transform: scale(3);
+@media(max-width:800px){
+    .home-intro {
+        font-size: medium;
+        margin: 5px;
+        line-height: 1.8;
+    }
+    
+    .home-list {
+        font-size: medium;
+        margin: 5px;
+        line-height: 1.8;
+    }
 }
 
 .aboutButtons {
@@ -90,11 +52,62 @@
     text-align: center;
 }
 
+.linkedIn-img {
+    padding-bottom: 15px;
+    height: 48px;
+    width: 48px;
+}
+
+.linkedIn-img:hover {
+    transform: scale(1.2);
+}
+
+.github-img {
+    height: 55px;
+    width: 55px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.github-img:hover {
+    transform: scale(1.4);
+}
+
+.emailIcon {
+    padding-right: 15px;
+    transform: scale(2.5);
+    color: #3590b9;
+    margin-right: 8px;
+    margin-left: 5px;
+    vertical-align: middle;
+    padding-top: 7px;
+}
+
+.emailIcon:hover {
+    transform: scale(3.5);
+}
+
+.phoneIcon {
+    padding-left: 6px;
+    transform: scale(2.2);
+    color: #3590b9;
+    margin-left: 8px;
+    padding-right: 12px;
+    margin-right: 6px;
+    vertical-align: middle;
+    padding-top: 7px;
+}
+
+.phoneIcon:hover {
+    transform: scale(3);
+}
+
 .resume-img {
-    height: 60px;
-    width: 60px;
-    padding-bottom: 6px;
-    padding-left: 5px;
+    height: 50px;
+    width: 50px;
+    padding-bottom: 12px;
 }
 
 .resume-img:hover {

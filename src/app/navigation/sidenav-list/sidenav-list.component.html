@@ -1,37 +1,49 @@
 <mat-nav-list>
-    <a mat-list-item (click)="onSidenavClose('homeId')" #tooltip="matTooltip" matTooltip="Home: Scroll to Top">
-        <mat-icon class="side-menu-icons">home</mat-icon><span class="nav-caption">Home</span>
-    </a>
-    <a mat-list-item (click)="onSidenavClose('aboutId')" #tooltip="matTooltip" matTooltip="Scroll to About section">
-        <mat-icon class="side-menu-icons">person</mat-icon> <span class="nav-caption">About</span>
-    </a>
-    <a mat-list-item (click)="onSidenavClose('skillsId')" #tooltip="matTooltip" matTooltip="Scroll to Skills section">
-        <mat-icon class="side-menu-icons">create</mat-icon> <span class="nav-caption">Skills</span>
-    </a>
-    <a mat-list-item (click)="onSidenavClose('timelineId')" #tooltip="matTooltip"
-        matTooltip="Scroll to Timeline section">
-        <mat-icon class="side-menu-icons">access_time</mat-icon><span class="nav-caption">Timeline</span>
-    </a>
-    <a mat-list-item (click)="onSidenavClose('projectsId')" #tooltip="matTooltip"
-        matTooltip="Scroll to Projects section">
-        <mat-icon class="side-menu-icons">library_books</mat-icon><span class="nav-caption">Projects</span>
-    </a>
-    <a mat-list-item (click)="onSidenavClose('certificationsId')" #tooltip="matTooltip"
-        matTooltip="Scroll to Certifications section">
-        <mat-icon class="side-menu-icons">image</mat-icon><span class="nav-caption">Certifications</span>
-    </a>
-    <a mat-list-item (click)="onSidenavClose('publicationsId')" #tooltip="matTooltip"
-        matTooltip="Scroll to Publications section">
-        <mat-icon class="side-menu-icons">image</mat-icon><span class="nav-caption">Publication</span>
-    </a>
-    <a mat-list-item (click)="onSidenavClose('experienceId')" #tooltip="matTooltip"
-        matTooltip="Scroll to Experience section">
-        <mat-icon class="side-menu-icons">work</mat-icon> <span class="nav-caption">Experience</span>
-    </a>
-
-    <a mat-list-item (click)="onSidenavClose('')" href="assets/Aishwarya_Resume.pdf" target="_blank"
-        rel="noreferrer noopener" #tooltip="matTooltip" matTooltip="Click to open Resume"> <mat-icon
-            class="side-menu-icons"> insert_drive_file</mat-icon><span class="nav-caption">Resume </span>
-    </a>
-
+    <mat-list-item [ngClass]="{ 'sn-current-section': currentSection === 'homeId' }">
+        <a (click)="onSidenavClose('homeId')" #tooltip="matTooltip" matTooltip="Home: Scroll to Top">
+            <mat-icon class="side-menu-icons">home</mat-icon><span class="nav-caption">Home</span>
+        </a>
+    </mat-list-item>
+    <mat-list-item [ngClass]="{ 'sn-current-section': currentSection === 'aboutId' }">
+        <a (click)="onSidenavClose('aboutId')" #tooltip="matTooltip" matTooltip="Scroll to About section">
+            <mat-icon class="side-menu-icons">person</mat-icon> <span class="nav-caption">About</span>
+        </a>
+    </mat-list-item>
+    <mat-list-item [ngClass]="{ 'sn-current-section': currentSection === 'skillsId' }">
+        <a (click)="onSidenavClose('skillsId')" #tooltip="matTooltip" matTooltip="Scroll to Skills section">
+            <mat-icon class="side-menu-icons">create</mat-icon> <span class="nav-caption">Skills</span>
+        </a>
+    </mat-list-item>
+    <mat-list-item [ngClass]="{ 'sn-current-section': currentSection === 'timelineId' }">
+        <a (click)="onSidenavClose('timelineId')" #tooltip="matTooltip" matTooltip="Scroll to Timeline section">
+            <mat-icon class="side-menu-icons">access_time</mat-icon><span class="nav-caption">Timeline</span>
+        </a>
+    </mat-list-item>
+    <mat-list-item [ngClass]="{ 'sn-current-section': currentSection === 'projectsId' }">
+        <a (click)="onSidenavClose('projectsId')" #tooltip="matTooltip" matTooltip="Scroll to Projects section">
+            <mat-icon class="side-menu-icons">library_books</mat-icon><span class="nav-caption">Projects</span>
+        </a>
+    </mat-list-item>
+    <mat-list-item [ngClass]="{ 'sn-current-section': currentSection === 'certificationsId' }">
+        <a (click)="onSidenavClose('certificationsId')" #tooltip="matTooltip"
+            matTooltip="Scroll to Certifications section">
+            <mat-icon class="side-menu-icons">image</mat-icon><span class="nav-caption">Certifications</span>
+        </a>
+    </mat-list-item>
+    <mat-list-item [ngClass]="{ 'sn-current-section': currentSection === 'publicationId' }">
+        <a (click)="onSidenavClose('publicationId')" #tooltip="matTooltip" matTooltip="Scroll to Publications section">
+            <mat-icon class="side-menu-icons">image</mat-icon><span class="nav-caption">Publication</span>
+        </a>
+    </mat-list-item>
+    <mat-list-item [ngClass]="{ 'sn-current-section': currentSection === 'experienceId' }">
+        <a (click)="onSidenavClose('experienceId')" #tooltip="matTooltip" matTooltip="Scroll to Experience section">
+            <mat-icon class="side-menu-icons">work</mat-icon> <span class="nav-caption">Experience</span>
+        </a>
+    </mat-list-item>
+    <mat-list-item [ngClass]="{ 'sn-current-section': currentSection === '' }">
+        <a (click)="onSidenavClose('')" href="assets/Aishwarya_Resume.pdf" target="_blank" rel="noreferrer noopener"
+            #tooltip="matTooltip" matTooltip="Click to open Resume"> <mat-icon class="side-menu-icons">
+                insert_drive_file</mat-icon><span class="nav-caption">Resume </span>
+        </a>
+    </mat-list-item>
 </mat-nav-list>

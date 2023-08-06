@@ -18,7 +18,6 @@ import { CertificationsComponent } from './certifications/certifications.compone
 import { TimelineComponent } from './timeline/timeline.component';
 import { FooterComponent } from './footer/footer.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +31,7 @@ import { FooterComponent } from './footer/footer.component';
     SkillsComponent,
     CertificationsComponent,
     TimelineComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

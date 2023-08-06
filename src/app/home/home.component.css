@@ -18,6 +18,12 @@
     margin: 5%;
     padding: 5%;
     background-color: #fdf6f5;
+    transform: translateY(0);
+    box-shadow:
+        0 0 50px #fff,
+        -10px 0 80px rgb(163, 218, 205),
+        10px 0 80px rgb(158, 216, 216);
+        ;
 }
 
 .home-img {

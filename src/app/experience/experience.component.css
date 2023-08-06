@@ -48,6 +48,14 @@
     padding: 3px;
 }
 
+@media(max-width:800px) {
+    .experience-points {
+        font-size: medium;
+        margin: 10px 3px 10px 5px;
+        padding: 3px;
+    }   
+}
+
 .exp-icon{
     vertical-align: middle;
     transform: scale(0.7);
