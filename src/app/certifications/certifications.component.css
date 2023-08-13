@@ -82,7 +82,7 @@
 
 
 
-.publicationsSection {
+.publicationSection {
     margin-top: 25px;
     margin-bottom: 25px;
     padding-top: 85px;
@@ -91,7 +91,7 @@
     justify-content: center;
 }
 
-.publicationsTitle {
+.publicationTitle {
     margin: 10px auto;
     text-align: center;
     font-size: xx-large;
@@ -104,7 +104,7 @@
     width: 100%;
 }
 
-.publicationsDiv {
+.publicationDiv {
     margin: 5px auto;
     padding-bottom: 25px;
     align-items: center;

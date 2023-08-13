@@ -5,31 +5,45 @@
             <div class="projectsDiv" fxLayout="row wrap" fxLayoutGap="10px grid">
                 <div class="project-loop-div" *ngFor="let project of projectList">
                     <div class="project mat-elevation-z8" fxLayout="row wrap" fxLayoutGap="10px grid">
-                        <h2 class="project-title"><b><u>{{project.title}}</u></b></h2>
-                        <img fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="90%" fxFlex.md="50%"
-                            class="proj-img-float mat-elevation-z12" src="{{ project.imgUrl }}"
-                            alt="{{ project.title }}">
-                        <div class="proj-text-right-div mat-elevation-z12" fxFlex="66%" fxFlex.xs="100%" fxFlex.sm="90%"
-                            fxFlex.md="70%">
-                            <div class="proj-skills-div">
-                                <span class="project-skill-title"><b>Skills Used:</b></span>
-                                <div class="project-skill-list" *ngFor="let skill of project.skills">
-                                    <button class="project-skill">{{skill}}</button>
+                        <mat-card class="project-card" fxLayout="row wrap" fxLayoutGap="10px grid">
+                            <mat-card-header>
+                                <mat-card-title class="project-title">
+                                    <h2><b><u>{{project.title}}</u></b></h2>
+                                </mat-card-title>
+                                <mat-card-subtitle
+                                    class="project-subTitle"><i>{{project.subTitle}}</i></mat-card-subtitle>
+                            </mat-card-header>
+                            <div class="proj-img-div">
+                                <img mat-card-image class="proj-card-img" src="{{ project.imgUrl }}"
+                                    alt="{{ project.title }}" fxFlex="35%" fxFlex.xs="95%" fxFlex.sm="55%"
+                                    fxFlex.md="45%">
+                            </div>
+                            <mat-card-content class="project-card-content mat-elevation-z12">
+                                <div class="proj-skills-div">
+                                    <span class="project-skill-title"><b>Skills Used:</b></span>
+                                    <div class="project-skill-list" *ngFor="let skill of project.skills">
+                                        <button class="project-skill">{{skill}}</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project-desc">{{project.desc}}
-                                <a *ngIf="project.show"
-                                    href="https://lodopab.grand-challenge.org/evaluation/challenge/leaderboard/"
-                                    target="_blank" rel="noreferrer noopener" #tooltip="matTooltip"
-                                    matTooltip="Click to open" class="project-link">LoDoPaB CT Challenge.</a>
-                            </div>
-                            <div class="proj-img-div" *ngIf="project.gitImgShow">
+                                <div class="project-desc">{{project.desc}}
+                                    <a *ngIf="project.show"
+                                        href="https://lodopab.grand-challenge.org/evaluation/challenge/leaderboard/"
+                                        target="_blank" rel="noreferrer noopener" #tooltip="matTooltip"
+                                        matTooltip="Click to open" class="project-link">LoDoPaB CT Challenge.</a>
+                                </div>
+                                <div class="proj-icon-div">
+                                    <a *ngIf="project.gitImgShow" [href]="project.gitLink" target="_blank"
+                                        rel="noreferrer noopener" #tooltip="matTooltip"
+                                        matTooltip="Click to view the project repository"> <img class="proj-git-img"
+                                            src="assets/proj-git.png" alt="GitHub Icon"> </a>
 
-                                <a [href]="project.gitLink" target="_blank" rel="noreferrer noopener"
-                                    #tooltip="matTooltip" matTooltip="Click to view the project repository"> <img
-                                        class="proj-git-img" src="assets/proj-git.png" alt="GitHub Icon"> </a>
-                            </div>
-                        </div>
+                                    <a *ngIf="project.reportImgShow" [href]="project.reportLink" target="_blank"
+                                        rel="noreferrer noopener" #tooltip="matTooltip"
+                                        matTooltip="Click to view the project report"> <img class="proj-report-img"
+                                            src="assets/report.png" alt="Project Report Icon"> </a>
+                                </div>
+                            </mat-card-content>
+                        </mat-card>
                     </div>
                 </div>
             </div>
