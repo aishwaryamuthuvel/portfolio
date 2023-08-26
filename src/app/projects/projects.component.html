@@ -1,6 +1,6 @@
 <div id="projectsId" class="projectsSection">
     <mat-card class="mat-elevation-z4" fxFlex="70%" fxFlex.xs="100%" fxFlex.sm="90%" fxFlex.md="90%">
-        <h1 class="projectsTitle">Projects</h1>
+        <h1 class="projectsTitle">Academic Projects</h1>
         <mat-card-content>
             <div class="projectsDiv" fxLayout="row wrap" fxLayoutGap="10px grid">
                 <div class="project-loop-div" *ngFor="let project of projectList">
@@ -10,13 +10,11 @@
                                 <mat-card-title class="project-title">
                                     <h2><b><u>{{project.title}}</u></b></h2>
                                 </mat-card-title>
-                                <mat-card-subtitle
-                                    class="project-subTitle"><i>{{project.subTitle}}</i></mat-card-subtitle>
                             </mat-card-header>
                             <div class="proj-img-div">
                                 <img mat-card-image class="proj-card-img" src="{{ project.imgUrl }}"
-                                    alt="{{ project.title }}" fxFlex="35%" fxFlex.xs="95%" fxFlex.sm="55%"
-                                    fxFlex.md="45%">
+                                    alt="{{ project.title }}" fxFlex="{{project.imgSizeNormalView}}" fxFlex.xs="95%"
+                                    fxFlex.sm="{{project.imgSizeSMView}}" fxFlex.md="{{project.imgSizeMDView}}">
                             </div>
                             <mat-card-content class="project-card-content mat-elevation-z12">
                                 <div class="proj-skills-div">
@@ -35,12 +33,12 @@
                                     <a *ngIf="project.gitImgShow" [href]="project.gitLink" target="_blank"
                                         rel="noreferrer noopener" #tooltip="matTooltip"
                                         matTooltip="Click to view the project repository"> <img class="proj-git-img"
-                                            src="assets/proj-git.png" alt="GitHub Icon"> </a>
+                                            src="assets/img/proj-git.png" alt="GitHub Icon"> </a>
 
                                     <a *ngIf="project.reportImgShow" [href]="project.reportLink" target="_blank"
                                         rel="noreferrer noopener" #tooltip="matTooltip"
                                         matTooltip="Click to view the project report"> <img class="proj-report-img"
-                                            src="assets/report.png" alt="Project Report Icon"> </a>
+                                            src="assets/img/report.png" alt="Project Report Icon"> </a>
                                 </div>
                             </mat-card-content>
                         </mat-card>

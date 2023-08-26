@@ -12,12 +12,12 @@ export class HomeComponent {
   constructor(private globalService: GlobalService) { }
 
   imgUrlList = [
-    `url(assets/home-bg-big.jpeg)`,
-    `url(assets/ml-bg.jpg)`,
-    `url(assets/cv-bg.PNG)`,
-    `url(assets/medical-img-bg.PNG)`,
-    `url(assets/NLP-bg.jpg)`,
-    `url(assets/ts-bg.png)`,
+    `url(assets/img/home-bg-big.jpeg)`,
+    `url(assets/img/ml-bg.jpg)`,
+    `url(assets/img/cv-bg.PNG)`,
+    `url(assets/img/medical-img-bg.PNG)`,
+    `url(assets/img/NLP-bg.jpg)`,
+    `url(assets/img/ts-bg.png)`,
   ];
 
   imageIndex = 0;
